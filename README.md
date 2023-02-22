@@ -51,7 +51,7 @@ In this write up, you are going to learn how to:
 
 ###  Links to files
 
-- [Dockerfile](./My-prtfolio-website/Dockerfile)
+- [Dockerfile](./My-portfolio-website/Dockerfile)
 - [Web-deployment file](https://github.com/Bukola-Testimony/Google-kubernetes-mini-project/blob/main/web-deployment.yml)
 - [GKE manifest file](https://github.com/Bukola-Testimony/Google-kubernetes-mini-project/blob/main/gke-manifest.yaml)
 

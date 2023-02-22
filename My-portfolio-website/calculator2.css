@@ -1,0 +1,118 @@
+/* declaring variable for reusable css properties */
+:root {
+    --container-bg:  #1f5334;
+    --button-bg: #cee06c;
+    background-color:#4bc2d4 ;
+}
+
+
+/* Resets to remove default browser padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+/* styles for the home link */
+
+.home{
+    margin-top: -20px;
+   
+}
+
+
+/* Styles for the html body container */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin-inline: auto;
+    padding-top: 2rem;
+    padding-bottom: 2em;
+}
+
+/* Styles for header "Calculator" */
+h2 {
+    text-align: center;
+    margin-top:-30px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #0b0c0c;
+}
+
+/* Styles for the calculator body/container div */
+#container {
+    background-color: var(--container-bg);
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    max-width: 380px;
+    justify-content: center;
+    margin-inline: auto;
+    border-radius: 50px;
+    box-shadow: 5px 5px 6px 5px rgba(27, 20, 20, 0.384);
+    
+    
+}
+
+/* Styles for the calculator screen div */
+#screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 90%;
+    background-color: rgb(191, 228, 230) ;
+    border-radius: 20px;
+    height: 150px;
+    margin: 30px auto;
+    /* padding-inline: 50px; */
+    box-shadow: 5px 5px 6px 5px rgba(27, 20, 20, 0.384);
+}
+
+
+h1{
+    font-size: 4rem;
+    margin-right: 25px;
+}
+
+/* Styles for the ul */
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 8px;
+}
+
+/* Styles for the buttons container div */
+#buttons {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.text :hover{
+    color: white;
+}
+    
+
+
+/* Styles for each list item(button) */
+ul li {
+    list-style: none;
+    flex-basis: 23%;
+    text-align: center;
+    font: 1.6em sans-serif;
+    background-color: #91a181;
+    padding: 14px 0;
+    color: #1c1018;
+    background-size: contain;
+    border-radius: 50px;
+    padding-inline: 5px;
+    box-shadow: 5px 5px 6px black;
+   
+}
+
+.ac{
+    color:aliceblue;
+    background-color: rgb(238, 42, 42);
+}
+

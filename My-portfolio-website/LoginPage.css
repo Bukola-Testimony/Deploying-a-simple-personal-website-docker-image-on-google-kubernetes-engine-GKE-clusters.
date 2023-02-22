@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #79DAE8;
+}
+
+.container{
+    background-color: rgb(239, 234, 216);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.home{
+    display: flex;
+    justify-content: start;
+    margin-top: -40px;
+    margin-bottom: 1px; 
+
+}
+
+.first-para{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 40px;
+}
+
+#sign-up{
+    color: #4bc2d4;
+}
+
+h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.para-two{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.username, .password{
+    width: 100%;
+    margin-top: 20px;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 50px;
+    border-width: 1px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.check{
+    width: 10px;
+    margin-right: 5px;  
+}
+
+
+#pass-word{
+    color: #4bc2d4;
+}
+
+button{
+    width: 90%;
+    padding: 10px;
+    border-radius: 50px;
+    border-width: 1px;
+    font-size: 16px;
+    color: white;
+    background-color: #79DAE8;
+    border: none;
+    margin-bottom: 33px;
+}
+
+.horizontal-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+hr{
+    width: 120px;
+    /* height: 1px; */
+    background-color: gray;
+    border-bottom: 0;
+
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.icon > img{
+   margin-right: 30px;
+   border: 1px solid black;
+   padding: 7px;
+   border-radius: 10px;
+    
+}
