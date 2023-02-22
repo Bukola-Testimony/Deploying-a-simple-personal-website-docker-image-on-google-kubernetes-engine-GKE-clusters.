@@ -40,6 +40,7 @@ In this write up, you are going to learn how to:
 - Name your cluster and select your zone. 
 - Leave the other default configurations and scroll down. Click “Create” to create the cluster. This takes few minutes for the cluster to be provisioned.
 - Once the cluster is running, connect to it using the Google Cloud Shell. 
+- Now create your deployment using the web image
 - Expose the deployment using a load balancer and a port.
 - To check the status of the load balancer, run the following command:
 kubectl get services
@@ -51,9 +52,9 @@ kubectl get services
 
 ###  Links to files
 
-- ![Dockerfile](./My-Portfolio-website/Dockerfile)
-- ![Web-deployment file](web-deployment.yml)
-- ![GKE manifest file](gke-manifest.yaml)
+- ![Dockerfile](../My-Portfolio-website/Dockerfile)
+- ![Web-deployment file](https://github.com/Bukola-Testimony/Google-kubernetes-mini-project/blob/main/web-deployment.yml)
+- ![GKE manifest file](https://github.com/Bukola-Testimony/Google-kubernetes-mini-project/blob/main/gke-manifest.yaml)
 
 
 <br>
@@ -91,11 +92,12 @@ EXPOSE 80
 
 ```console
 
- $ docker build -t portfolio . 
-# Note: replace "portfolio" with any name of your choice. Don't forget to include the dot at the end of the command
+$ docker build -t portfolio . 
+# Note: replace "portfolio" with any name of your choice. 
+# Don't forget to include the dot at the end of the command
 
-# To check your image 
 $ docker image ls
+# To check your image 
  
 ```
 
@@ -127,13 +129,13 @@ $ docker pull bukola01/portfolio
 
 ```
 
-# CREATE A DEPLOYMENT ON GOOGLE KUBERNETES ENGINE (GKE) WITH THE WEB IMAGE.
+## CREATE A DEPLOYMENT ON GOOGLE KUBERNETES ENGINE (GKE) WITH THE WEB IMAGE.
 
 ## step one
 > Log in to your Google Cloud Platform account and navigate to the Kubernetes Engine in the left navigation panel.
 <br>
 
-> ![Google-kubernetes-mini-project](./images/file-1)
+> ![Google-kubernetes-mini-project](../images/file-1)
 
 <br>
 <br>
@@ -142,8 +144,8 @@ $ docker pull bukola01/portfolio
 > Click “Create cluster” and choose the “standard” option.
 <br>
 
-> ![Google-kubernetes-mini-project](./images/file-2)
-> ![Google-kubernetes-mini-project](./images/file-3)
+> ![Google-kubernetes-mini-project](../images/file-2)
+> ![Google-kubernetes-mini-project](../images/file-3)
 
 <br>
 <br>
@@ -153,7 +155,7 @@ $ docker pull bukola01/portfolio
  Click “Create” to create the cluster. This takes a few minutes for the cluster to be provisioned.
 <br>
 
-> ![Google-kubernetes-mini-project](./images/file-4)
+> ![Google-kubernetes-mini-project](../images/file-4)
 
 <br>
 <br>
@@ -177,7 +179,7 @@ click on run in cloud shell and allow the environment to provision.
 <br>
 
 ## step five
-enter the cloud authentication code already placed in your cloud shell area. This may ask for authentication, click ok.
+Enter the cloud authentication code already placed in your cloud shell area. This may ask for authentication, click ok.
 Then configure your project ID. To do that, Follow the guide in the screenshots below.
 > ![Google-kubernetes-mini-project](./images/file-9)
 > ![Google-kubernetes-mini-project](./images/file-10)
