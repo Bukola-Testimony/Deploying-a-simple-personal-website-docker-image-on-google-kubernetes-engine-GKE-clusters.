@@ -180,7 +180,7 @@ Note: if this is your first time, you will be prompted to enable the Google kube
 <br>
 
 ## step five
-click on run in cloud shell and allow the environment to provision.
+click on "run in cloud shell" and allow the environment to provision.
 > ![Google-kubernetes-mini-project](./images/file-7.png)
 <br>
 
