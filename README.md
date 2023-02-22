@@ -69,6 +69,7 @@ touch Dockerfile
 ```console
 nano Dockerfile
 ```
+<br>
 
 ## Place the following code into the dockerfile, save and close: 
 
@@ -126,7 +127,8 @@ docker push bukola01/portfolio
 docker pull bukola01/portfolio
 
 ```
-
+<br>
+<br>
 ### CREATE A DEPLOYMENT ON GOOGLE KUBERNETES ENGINE (GKE) WITH THE WEB IMAGE.
 
 ## step one
