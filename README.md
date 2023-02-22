@@ -1,6 +1,7 @@
   # Google-kubernetes-mini-project
 
 > ![Google-kubernetes-mini-project](GKE-LOGO.png) 
+<br>
 
 - [OVERVIEW](#OVERVIEW) 
 - [Process](#Process)
@@ -92,7 +93,7 @@ EXPOSE 80
 ```console
 
 docker build -t portfolio . 
-# Note: replace "portfolio" with any name of your choice. 
+# Replace <portfolio> with any name of your choice. 
 # Don't forget to include the dot at the end of the command
 
 docker image ls
@@ -114,7 +115,9 @@ docker run -dit -p 8000:80 portfolio
 ```console
 
 docker tag portfolio bukola01/portfolio
+# Note: replace <bukola01> with your dockerhub username
 docker login 
+# Note this will prompt you to enter your username and password
 docker push bukola01/portfolio
  
 ```
@@ -129,10 +132,12 @@ docker pull bukola01/portfolio
 ```
 <br>
 <br>
+
 ### CREATE A DEPLOYMENT ON GOOGLE KUBERNETES ENGINE (GKE) WITH THE WEB IMAGE.
 
 ## step one
 > Log in to your Google Cloud Platform account and navigate to the Kubernetes Engine in the left navigation panel.
+Note: if this is your first time, you will be prompted to enable the Google kubernetes Engine API. Click on "OK" and wait for the API to be enabled.
 <br>
 
 > ![Google-kubernetes-mini-project](./images/file-1.png)
