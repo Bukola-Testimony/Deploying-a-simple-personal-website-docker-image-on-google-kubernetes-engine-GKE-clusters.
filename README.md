@@ -135,7 +135,7 @@ $ docker pull bukola01/portfolio
 > Log in to your Google Cloud Platform account and navigate to the Kubernetes Engine in the left navigation panel.
 <br>
 
-> ![Google-kubernetes-mini-project](../images/file-1)
+> ![Google-kubernetes-mini-project](/images/file-1)
 
 <br>
 <br>
@@ -144,8 +144,8 @@ $ docker pull bukola01/portfolio
 > Click “Create cluster” and choose the “standard” option.
 <br>
 
-> ![Google-kubernetes-mini-project](../images/file-2)
-> ![Google-kubernetes-mini-project](../images/file-3)
+> ![Google-kubernetes-mini-project](/images/file-2)
+> ![Google-kubernetes-mini-project](/images/file-3)
 
 <br>
 <br>
