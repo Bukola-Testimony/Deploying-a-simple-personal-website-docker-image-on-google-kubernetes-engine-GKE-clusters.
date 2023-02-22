@@ -52,9 +52,9 @@ kubectl get services
 
 ###  Links to files
 
-- ![Dockerfile](../My-Portfolio-website/Dockerfile)
-- ![Web-deployment file](https://github.com/Bukola-Testimony/Google-kubernetes-mini-project/blob/main/web-deployment.yml)
-- ![GKE manifest file](https://github.com/Bukola-Testimony/Google-kubernetes-mini-project/blob/main/gke-manifest.yaml)
+- [Dockerfile](../My-Portfolio-website/Dockerfile)
+- [Web-deployment file](https://github.com/Bukola-Testimony/Google-kubernetes-mini-project/blob/main/web-deployment.yml)
+- [GKE manifest file](https://github.com/Bukola-Testimony/Google-kubernetes-mini-project/blob/main/gke-manifest.yaml)
 
 
 <br>
@@ -129,7 +129,7 @@ $ docker pull bukola01/portfolio
 
 ```
 
-## CREATE A DEPLOYMENT ON GOOGLE KUBERNETES ENGINE (GKE) WITH THE WEB IMAGE.
+### CREATE A DEPLOYMENT ON GOOGLE KUBERNETES ENGINE (GKE) WITH THE WEB IMAGE.
 
 ## step one
 > Log in to your Google Cloud Platform account and navigate to the Kubernetes Engine in the left navigation panel.
@@ -145,6 +145,8 @@ $ docker pull bukola01/portfolio
 <br>
 
 > ![Google-kubernetes-mini-project](./images/file-2.png)
+<br>
+
 > ![Google-kubernetes-mini-project](./images/file-3.png)
 
 <br>
@@ -160,17 +162,19 @@ $ docker pull bukola01/portfolio
 <br>
 <br>
 
-## step three
+## step four
 > Once the cluster is running, connect to it using the Google Cloud Shell
 <br>
 
 > ![Google-kubernetes-mini-project](./images/file-5.png)
+<br>
+
 > ![Google-kubernetes-mini-project](./images/file-6.png)
 
 <br>
 <br>
 
-## step four
+## step five
 click on run in cloud shell and allow the environment to provision.
 > ![Google-kubernetes-mini-project](./images/file-7.png)
 > ![Google-kubernetes-mini-project](./images/file-8.png)
@@ -178,18 +182,22 @@ click on run in cloud shell and allow the environment to provision.
 <br>
 <br>
 
-## step five
+## step six
 Enter the cloud authentication code already placed in your cloud shell area. This may ask for authentication, click ok.
 Then configure your project ID. To do that, Follow the guide in the screenshots below.
 > ![Google-kubernetes-mini-project](./images/file-9.png)
+<br>
+
 > ![Google-kubernetes-mini-project](./images/file-10.png)
+<br>
+
 > ![Google-kubernetes-mini-project](./images/file-11.png)
 
 <br>
 <br>
 
 
-## step six
+## step seven
 Now create your deployment and expose it using the following commands.
 
 ```console
@@ -203,7 +211,7 @@ Now create your deployment and expose it using the following commands.
 <br>
 <br>
 
-## step seven
+## step eight
 Finally, copy the external IP only (without the port) to your browser. If are able to view your website, then your deployment was successful.
 
 > ![Google-kubernetes-mini-project](./images/file-13.png)
