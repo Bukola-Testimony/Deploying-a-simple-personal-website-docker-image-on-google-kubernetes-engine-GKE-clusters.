@@ -38,13 +38,11 @@ In this write up, you are going to learn how to:
 - Log in to your Google Cloud Platform account and navigate to the Kubernetes Engine in the left navigation panel.
 - Click “Create cluster” and choose the “standard” option.
 - Name your cluster and select your zone. 
-- Leave the other default configurations and scroll down. Click “Create” to create the cluster. This takes few minutes for the cluster to be provisioned.
+- Leave the other default configurations and scroll down. Click “Create” to create the cluster. This takes a few minutes for the cluster to be provisioned.
 - Once the cluster is running, connect to it using the Google Cloud Shell. 
 - Now create your deployment using the web image
 - Expose the deployment using a load balancer and a port.
-- To check the status of the load balancer, run the following command:
-kubectl get services
-- Finally, copy the external IP only (without the port) to your browser. If are able to view your website, then your deployment was successful.
+- Finally, copy the external IP to your browser. If you are able to view your website, then your deployment was successful.
 
 <br>
 <br>
@@ -65,11 +63,11 @@ If you have a website pushed to github, simply clone it into your local work are
 in your terminal, cd into your cloned project and create a dockerfile
 
 ```console
-$ touch Dockerfile
+touch Dockerfile
 ```
 
 ```console
-$ nano Dockerfile
+nano Dockerfile
 ```
 
 ## Place the following code into the dockerfile, save and close: 
@@ -92,11 +90,11 @@ EXPOSE 80
 
 ```console
 
-$ docker build -t portfolio . 
+docker build -t portfolio . 
 # Note: replace "portfolio" with any name of your choice. 
 # Don't forget to include the dot at the end of the command
 
-$ docker image ls
+docker image ls
 # To check your image 
  
 ```
@@ -105,7 +103,7 @@ $ docker image ls
 
 ```console
 
-$ docker run -dit -p 8000:80 portfolio
+docker run -dit -p 8000:80 portfolio
 # Note: check your localhost:8000 to view your image.
  
 ```
@@ -114,9 +112,9 @@ $ docker run -dit -p 8000:80 portfolio
 
 ```console
 
-$ docker tag portfolio bukola01/portfolio
-$ docker login 
-$ docker push bukola01/portfolio
+docker tag portfolio bukola01/portfolio
+docker login 
+docker push bukola01/portfolio
  
 ```
 
@@ -125,7 +123,7 @@ $ docker push bukola01/portfolio
 > To pull the image at anytime, run the following command:
 
 ```console
-$ docker pull bukola01/portfolio
+docker pull bukola01/portfolio
 
 ```
 
@@ -177,6 +175,8 @@ $ docker pull bukola01/portfolio
 ## step five
 click on run in cloud shell and allow the environment to provision.
 > ![Google-kubernetes-mini-project](./images/file-7.png)
+<br>
+
 > ![Google-kubernetes-mini-project](./images/file-8.png)
 
 <br>
@@ -201,10 +201,11 @@ Then configure your project ID. To do that, Follow the guide in the screenshots 
 Now create your deployment and expose it using the following commands.
 
 ```console
-~$ kubectl create deployment myweb --image=bukola01/portfolio
-~$ kubectl get deployment
-~$ kubectl expose deployment myweb --type=LoadBalancer --port=80
-~$ kubectl get service
+kubectl create deployment myweb --image=bukola01/portfolio
+kubectl get deployment
+kubectl expose deployment myweb --type=LoadBalancer --port=80
+kubectl get service
+
 ```
 > ![Google-kubernetes-mini-project](./images/file-12.png)
 
