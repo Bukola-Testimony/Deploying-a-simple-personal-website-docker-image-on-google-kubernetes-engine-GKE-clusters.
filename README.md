@@ -94,7 +94,7 @@ EXPOSE 80
 
 docker build -t portfolio . 
 # Replace <portfolio> with any name of your choice. 
-# Don't forget to include the dot at the end of the command
+# Also include the dot at the end of the command
 
 docker image ls
 # To check your image 
