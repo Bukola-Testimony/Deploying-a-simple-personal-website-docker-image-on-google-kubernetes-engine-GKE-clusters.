@@ -135,7 +135,7 @@ $ docker pull bukola01/portfolio
 > Log in to your Google Cloud Platform account and navigate to the Kubernetes Engine in the left navigation panel.
 <br>
 
-> ![Google-kubernetes-mini-project](/images/file-1)
+> ![Google-kubernetes-mini-project](./images/file-1.png)
 
 <br>
 <br>
@@ -144,8 +144,8 @@ $ docker pull bukola01/portfolio
 > Click “Create cluster” and choose the “standard” option.
 <br>
 
-> ![Google-kubernetes-mini-project](/images/file-2)
-> ![Google-kubernetes-mini-project](/images/file-3)
+> ![Google-kubernetes-mini-project](./images/file-2.png)
+> ![Google-kubernetes-mini-project](./images/file-3.png)
 
 <br>
 <br>
@@ -155,7 +155,7 @@ $ docker pull bukola01/portfolio
  Click “Create” to create the cluster. This takes a few minutes for the cluster to be provisioned.
 <br>
 
-> ![Google-kubernetes-mini-project](../images/file-4)
+> ![Google-kubernetes-mini-project](./images/file-4.png)
 
 <br>
 <br>
@@ -164,16 +164,16 @@ $ docker pull bukola01/portfolio
 > Once the cluster is running, connect to it using the Google Cloud Shell
 <br>
 
-> ![Google-kubernetes-mini-project](./images/file-5)
-> ![Google-kubernetes-mini-project](./images/file-6)
+> ![Google-kubernetes-mini-project](./images/file-5.png)
+> ![Google-kubernetes-mini-project](./images/file-6.png)
 
 <br>
 <br>
 
 ## step four
 click on run in cloud shell and allow the environment to provision.
-> ![Google-kubernetes-mini-project](./images/file-7)
-> ![Google-kubernetes-mini-project](./images/file-8)
+> ![Google-kubernetes-mini-project](./images/file-7.png)
+> ![Google-kubernetes-mini-project](./images/file-8.png)
 
 <br>
 <br>
@@ -181,9 +181,9 @@ click on run in cloud shell and allow the environment to provision.
 ## step five
 Enter the cloud authentication code already placed in your cloud shell area. This may ask for authentication, click ok.
 Then configure your project ID. To do that, Follow the guide in the screenshots below.
-> ![Google-kubernetes-mini-project](./images/file-9)
-> ![Google-kubernetes-mini-project](./images/file-10)
-> ![Google-kubernetes-mini-project](./images/file-11)
+> ![Google-kubernetes-mini-project](./images/file-9.png)
+> ![Google-kubernetes-mini-project](./images/file-10.png)
+> ![Google-kubernetes-mini-project](./images/file-11.png)
 
 <br>
 <br>
@@ -198,7 +198,7 @@ Now create your deployment and expose it using the following commands.
 ~$ kubectl expose deployment myweb --type=LoadBalancer --port=80
 ~$ kubectl get service
 ```
-> ![Google-kubernetes-mini-project](./images/file-12)
+> ![Google-kubernetes-mini-project](./images/file-12.png)
 
 <br>
 <br>
@@ -206,7 +206,7 @@ Now create your deployment and expose it using the following commands.
 ## step seven
 Finally, copy the external IP only (without the port) to your browser. If are able to view your website, then your deployment was successful.
 
-> ![Google-kubernetes-mini-project](./images/file-12)
+> ![Google-kubernetes-mini-project](./images/file-13.png)
 
 ## Congratulations! 
 
